@@ -4,6 +4,10 @@
     Author     : axter
 --%>
 
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.List"%>
+<%@page import="Modelo.Persona"%>
+<%@page import="ModeloDAO.PersonaDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,6 +16,39 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div>
+            <h1>Personas</h1>
+            <table border="1" >
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>CEDULA</th>
+                        <th>NOMBRES</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <%
+                    PersonaDAO dao=new PersonaDAO();
+                    List<Persona>list=dao.listar();
+                    Iterator<Persona>iter=list.iterator();
+                    Persona per=null;
+                    while(iter.hasNext()){
+                        per=iter.next();
+                    }
+                %>
+                <tbody>
+                    <tr>
+                        <td><%=per.getId() %></td>
+                        <td><%=per.getDni()%></td>
+                        <td><%=per.getNom()%></td>
+                        <td>
+                            <a>Editar</a>
+                            <a>Remove</a>
+                        </td>
+                    </tr>
+                    <%}%>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
