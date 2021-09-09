@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "Controlador", urlPatterns = {"/Controlador"})
 public class Controlador extends HttpServlet {
-    String listar="vistas/Listar.jsp";
+    String listar="/vistas/Listar.jsp";
     String adicionar="vistas/Adicionales.jsp";
     String editar="vistas/Editar.jsp";
     /**

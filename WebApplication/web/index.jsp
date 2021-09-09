@@ -12,7 +12,7 @@ and open the template in the editor.
     </head>
     <body>
         <div>
-            <a href="Controlador" >Listar Persona</a>
+            <a href="Controlador?accion=Listar" >Listar Persona</a>
         </div>
     </body>
 </html>
