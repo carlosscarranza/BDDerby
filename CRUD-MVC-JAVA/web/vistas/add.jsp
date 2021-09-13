@@ -21,8 +21,8 @@
                     <input class="form-control" type="text" name="txtDni"><br>
                     Nombres: <br>
                     <input class="form-control" type="text" name="txtNom"><br>
-                    <input class="btn btn-primary" type="submit" name="accion" value="Agregar">
-                    <a href="Controlador?accion=listar">Regresar</a>
+                    <input class="btn btn-success" type="submit" name="accion" value="Agregar">
+                    <a class="btn btn-secondary" href="Controlador?accion=listar">Regresar</a>
                 </form>
             </div>
 

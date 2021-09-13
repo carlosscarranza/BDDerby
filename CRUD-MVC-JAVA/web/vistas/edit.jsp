@@ -25,7 +25,7 @@
                 <input class="form-control" type="text" name="txtNom" value="<%= p.getNom()%>"><br>
                 
                 <input type="hidden" name="txtid" value="<%= p.getId()%>">
-                <input class="btn btn-primary" type="submit" name="accion" value="Actualizar"> 
+                <input class="btn btn-success" type="submit" name="accion" value="Actualizar"> 
                 <a href="Controlador?accion=listar">Regresar</a>
             </form>
           </div>
