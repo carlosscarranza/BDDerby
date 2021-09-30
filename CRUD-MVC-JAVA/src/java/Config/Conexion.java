@@ -8,7 +8,7 @@ public class Conexion {
     public Conexion(){
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://sql10.freesqldatabase.com:3306/sql10437558","sql10437558","zbIRcy5uzd");            
+            con=DriverManager.getConnection("jdbc:mysql://sql10.freesqldatabase.com:3306/sql10439556","sql10439556","lxPHV8jRrR");            
         } catch (Exception e) {
             System.err.println("Error"+e);
         }

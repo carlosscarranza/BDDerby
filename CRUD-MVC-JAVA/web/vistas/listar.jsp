@@ -14,16 +14,16 @@
     <body>
         <div class="container">
             <h1>Personas</h1>
-            <a class="btn btn-primary" href="Controlador?accion=add">Agregar Nuevo</a>
+            <a class="btn btn-success" href="Controlador?accion=add">Agregar Nuevo</a>
             <br>
             <br>
             <table class="table table-striped">
-                <thead class="thead-dark">
+                <thead class="thead">
                     <tr>
                         <th class="text-center">ID</th>
                         <th class="text-center">DNI</th>
                         <th class="text-center">NOMBRES</th>
-                        <th class="text-center">ACCIONES</th>
+                        <th class="text-center"></th>
                     </tr>
                 </thead>
                 <%
@@ -41,8 +41,8 @@
                         <td class="text-center"><%= per.getDni()%></td>
                         <td><%= per.getNom()%></td>
                         <td class="text-center">
-                            <a class="btn btn-info" href="Controlador?accion=editar&id=<%= per.getId()%>">Editar</a>
-                            <a class="btn btn-danger" href="Controlador?accion=eliminar&id=<%= per.getId()%>">Remove</a>
+                            <a class="btn bg-warning" href="Controlador?accion=editar&id=<%= per.getId()%>">Editar</a>
+                            <a class="btn bg-info" href="Controlador?accion=eliminar&id=<%= per.getId()%>">Remove</a>
                         </td>
                     </tr>
                     <%}%>
